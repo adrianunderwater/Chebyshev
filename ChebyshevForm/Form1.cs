@@ -20,7 +20,7 @@ namespace ChebyshevForm
             InitializeComponent();
 
             start = 0;
-            end = 0.5;
+            end = Math.PI/2;
         }
 
         /// <summary>
@@ -30,8 +30,8 @@ namespace ChebyshevForm
         /// <returns></returns>
         private double function(double xx)
         {
-            //return Math.Exp(xx);
-            return Math.Acos(xx);
+            return Math.Cos(xx);
+            //return Math.Acos(xx);
         }
 
         private void button1_Click(object sender, EventArgs e)
